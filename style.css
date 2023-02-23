@@ -1,0 +1,200 @@
+:root {
+--blue:#0065FC;
+--light-blue:#DEEBFF;
+--grey:#F4F3F3;
+
+}
+
+
+/* Mise en page géneral */
+
+body   
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+a
+{
+    text-decoration: none;              /*suppr le soulignement d'origine */
+    color: black;
+}
+
+a:visited
+{
+    color: black;                       /* lien visité en noir */
+}
+
+
+ /*Mise en page du Header desktop */
+
+header
+{
+    display: flex;                      /* defini l'axe principale en ligne pour <figure> et <nav> */
+    align-items: center;                /* centrage sur l'axe secondaire */
+    justify-content: space-between;     /* repartition dans le header sur l'axe principale */
+
+}
+
+#logo
+{
+    margin-top: 20px;                   /* ajout marge superieur */
+    margin-left: 93px;                  /* ajout marge gauche */
+    width: 81px;                        /* defini la hauteur */
+}
+
+h1
+{
+    font-weight: 700;                   /* mets en gras */
+    font-size: 29px;                    /* defini la taille de police */
+    margin-bottom: 15px;                /* ajout marge de dessous */
+    margin-top: 20px;                   /* ajout marge de dessus */
+    margin-left: 73px;                  /* ajout marge gauche */
+}
+
+#txt_header
+{
+    font-size: 21px;                    /* defini la taille du texte */
+    margin-left: 73px;                  /* ajout d'une marge interne gauche */    
+}
+
+/* menu desktop*/
+
+nav
+{
+    width: 430px;                       /* defini largeur dans <header> */
+    height: 155px;                      /* defini la hauteur */
+    margin-right: 57px;                 /* ajout marge droite */
+}
+
+ul
+{
+    display: flex;                      /* defini l'axe principale en ligne les balise <li> */
+    font-size: 23px;                    /* defini la taille de police */
+}
+
+li
+{
+    width: 50%;                         /* defini la largeur dans <ul> */
+    height: 155px;    
+    list-style-type: none;              /* suppr les puces */                  /* defini la hauteur */
+}
+
+.lien_menu
+{
+    display: flex;                      /* defini l'axe principale en ligne des <a> */ 
+    height: 100%;                       /* defini la hauteur dans <a> */
+    justify-content: center;            /* centrage sur l'axe principal des <a> dans <li> */
+    align-items: center;                /* centrage sur l'axe secondaire des <a> dans <li> */
+    text-decoration: none;              /* suprr le souligne bleu d'origine */
+    color: black;                     /* texte en noir */
+    list-style-type: none;              /* suppr les puces */
+    border-top: solid 3px transparent;  /* bordure supérieur invisible */
+}
+
+.lien_menu:hover
+ {
+    border-top: solid 3px #0065FC;    /* ligne bleu au survol */
+    color: #0065FC;                   /* texte bleu au survol */
+    
+ }
+
+ h2 {
+
+font-weight: 700;                         /* mets en gras*/
+font-size: 18px;                          /* defini la taille de police*/
+line-height: 21px;                        /* hauteur de chaque ligne */
+text-align: left;                         /* Aligenement du texte */
+ }
+ 
+ .Barre de recherche {
+    margin: 50px 5px 50px 50px;           /* marge */
+ }
+
+ /*Formulaire de recherche*/
+.étiqueter
+{
+    couleur de fond :  # F2F2F2 ;
+    rayon de bordure :  15 px  0 px  0 px  15 px ;
+    hauteur :  100 % ;
+    largeur :  10 % ;
+    affichage : flexible ;
+    justifier-contenu : center;
+    align-items : center;
+    /* rembourrage : 17px 18px 15px 18px ;*/ 
+}
+
+.form
+{
+    display: flex;
+    align-items : center;
+    margin-top :  20px ;
+    margin-bottom :  10px ;
+    
+   
+}
+#Rechercher
+{
+    border:1px solid #F2F2F2 ;
+    font-weight :700 ;
+    font size :18px ;
+    text-align :left ;  
+    height :49px ;
+    width :150px ;
+    align-items:center;
+
+    
+}
+.bouton
+{
+    background-color: #0065FC ;
+    border:10px solid #0065FC ;
+    font-weight :700 ;
+    font size : 18px ;
+    text-align : center;
+    height: 49px;
+    width : 132px;
+    border-radius: 0px 15px 15px 0px;
+    color: #ffffff;
+}
+.loupe
+{
+    /* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 16px;
+gap: 10px;
+
+position: absolute;
+width: 132px;
+height: 49px;
+left: 341px;
+top: 199px;
+
+/* Blue */
+
+background: #0065FC;
+/* Blue */
+
+border: 1px solid #0065FC;
+
+    
+}
+
+.filtre {
+display :flex;
+
+}
+.position {
+background:#F2F2F2;
+border: 1px solid #F2F2F2;
+border-radius: 15px 0px 0px 15px;
+width:50px;
+height:49px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size: 18px;
+
+}

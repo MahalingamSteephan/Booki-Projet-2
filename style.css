@@ -6,6 +6,7 @@
 body   
 {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 a
 {
@@ -50,6 +51,7 @@ ul
 {
     display: flex;                      /* defini l'axe principale en ligne les balise <li> */
     font-size: 23px;                    /* defini la taille de police */
+    margin: 0;
 }
 li
 {
@@ -71,7 +73,7 @@ li
 .lien_menu:hover
  {
     border-top: solid 3px #0065FC;      /* ligne bleu au survol */
-    color: #0065FC;                     /* texte bleu au survol */
+    color: #0065FC;                     /* texte bleu au survol */ 
  }
 /* Mise en forme du formulaire de recherche */
 #recherche
@@ -243,12 +245,16 @@ h3
 {
     display: flex;                      /* defini l'axe principal en ligne pour <figure class="img_hebergements et <figcaption>" */
     flex-direction: column;             /* defini l'axe principal en colonne */
+    width: 100%;
+    height: auto;
 }
 .img_hebergements
 {
     height: 152px;                      /* defini la hauteur */
     border-radius: 20px 20px 0px 0px;   /* arrondi les angles */
     object-fit: cover;                  /* <img> garde son ratio */
+    width: 100%;
+    height: auto;
 }
 figcaption
 {
